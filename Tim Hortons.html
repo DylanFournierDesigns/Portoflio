@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tim Hortons</title>
+    <link rel="stylesheet" href="css/TimHortons.css">
+</head>
+<body>
+<section>
+    <div class="circle"></div>
+    <header>
+        <a href="#" class="logo"><img src="Images/timlogo.png"></a>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Our New Products</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <div class="content">
+        <div class="textBox">
+            <h2>Home of Canada's<br>favorite <span style="color:red">Coffee</span></h2>
+            <p>Tim Hortons brings neighbors together over great-tasting coffee & delicious baked goods. Our original blend coffee is made with 100% premium Arabica beans and freshly brewed every 20 minutes. We also offer specialty beverages including lattes, cold brew, iced coffee, and our classic Iced Capp® beverages. Pair your favorite drink with one of our fresh cracked egg breakfast sandwiches, donuts, or a box of Timbits®. Stop by or order ahead with the Tim Hortons App.</p>
+            <a href="#">Learn More</a>
+        </div>
+        <div class="imgBox">
+            <img src="images/welcome.png" class="starbucks">
+        </div>
+    </div>
+    <ul class="thumb">
+        <li><img src="images/thumb1.png" onclick="imgSlider('Images/mixedberry.png');changeCircleColor('#FF69B4')"></li>
+        <li><img src="images/thumb2.png" onclick="imgSlider('images/fruitsmoothie.png');changeCircleColor('#FFE283')"></li>
+        <li><img src="images/thumb3.png" onclick="imgSlider('images/fruityogurt.png');changeCircleColor('#917B32')"></li>
+    </ul>
+    <ul class="sci">
+        <li><a href="#"><img src="images/facebook.png"></a></li>
+        <li><a href="#"><img src="images/twitter.png"></a></li>
+        <li><a href="#"><img src="images/instagram.png"></a></li>
+    </ul>
+</section>
+<script type="text/javascript">
+    function imgSlider(anything){
+        document.querySelector('.starbucks').src = anything;
+    }
+
+    function changeCircleColor(color){
+        const circle= document.querySelector('.circle');
+        circle.style.background = color;
+    }
+</script>
+</body>
+</html>

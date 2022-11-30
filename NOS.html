@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/NOS.css">
+    <title>NOS Landing Page</title>
+</head>
+<body>
+<section>
+    <div class="circle"></div>
+    <header>
+        <a href="#"><img src="Images/NOSLOGO.png" class="logo"></a>
+        <div class="toggle" onclick="toggleMenu()"></div>
+        <ul class="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">New Products</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <div class="content">
+        <div class="textBox">
+            <h2>DRINK NOS<h1 style="color:orange;">#GETAFTERIT</h1> </h2>
+            <p>
+                NOS Energy Drinks fuel high performance and enhance mental focus with our Cmplx 6 Energy Blend and original flavors like GT Grape, Sonic Sour, and Nitro Mango.
+            </p>
+            <a href="#">Learn More</a>
+        </div>
+        <div class="imgBox">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="Images/original.png"></div>
+                    <div class="swiper-slide"><img src="Images/grape.png"></div>
+                    <div class="swiper-slide"><img src="Images/mango.png"></div>
+                    <div class="swiper-slide"><img src="Images/turbo.png"></div>
+                    <div class="swiper-slide"><img src="Images/sonicsour.png"></div>
+                </div>
+            </div>
+        </div>
+        <ul class="sci">
+            <li><a href="#"><img src="Images/facebook.png"></a></li>
+            <li><a href="#"><img src="Images/twitter.png"></a></li>
+            <li><a href="#"><img src="Images/instagram.png"></a></li>
+        </ul>
+    </div>
+</section>
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper-container', {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+            rotate: 0,
+            stretch: 0,
+            depth: 200,
+            modifier: 1,
+            slideShadows: false,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+        },
+        loop: true,
+    });
+
+    function toggleMenu(){
+        const menuToggle = document.querySelector('.toggle');
+        const navigation = document.querySelector('.navigation')
+        menuToggle.classList.toggle('active')
+        navigation.classList.toggle('active')
+    }
+</script>
+</body>
+</html>

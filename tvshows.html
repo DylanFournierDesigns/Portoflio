@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <script src="https://kit.fontawesome.com/6cfe640a08.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Netflix TV Shows</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <a href="#" class="logo"><img src="Images/Logo.png"></a>
+    <ul class="navigation">
+        <li><a href="main.html">Home</a></li>
+        <li><a href="tvshows.html">TV Shows</a></li>
+        <li><a href="movies.html">Movies</a></li>
+        <li><a href="latest.html">Latest</a></li>
+        <li><a href="list.html">My List</a></li>
+    </ul>
+    <div class="search">
+        <input type="text" placeholder="Search">
+        <i class="fa fa-search" aria-hidden="true"></i>
+    </div>
+</header>
+<div class="banner">
+    <img src="Images/cyberpunk.jpg" class="bg">
+    <div class="content">
+        <img src="Images/image.png" class="movieTitle">
+        <h4>
+            <span>2022</span>
+            <span><i>17+</i></span>
+            <span>1h 55min</span>
+            <span>Action/Anime</span>
+        </h4>
+        <p>A street kid tries to survive in a technology and body modification-obsessed city of the future. With everything to lose, he chooses to stay alive by becoming an edgerunner: a mercenary outlaw, also known as a cyberpunk.</p>
+        <div class="buttons">
+            <a href="#"><i class="fa fa-play" aria-hidden="true"></i> Play</a>
+            <a href="#"><i class="fa fa-plus" aria-hidden="true"></i> My List</a>
+        </div>
+    </div>
+    <a class="play" onclick="toggleVideo();"><img src="Images/play.png">Watch Trailer</a>
+</div>
+
+<div class="trailer">
+    <video src="Images/Cyberpunk.mp4" controls="true" autoplay="true"></video>
+    <img src="Images/close.png" class="close" onclick="toggleVideo();">
+</div>
+
+<script>
+    function toggleVideo(){
+        const trailer = document.querySelector('.trailer');
+        const video = document.querySelector('video');
+        trailer.classList.toggle('active')
+        video.currentTime = 0;
+        video.pause();
+    }
+</script>
+</body>
+</html>

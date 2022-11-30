@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Home</title>
+</head>
+<body>
+<section>
+    <header>
+        <a href="#" class="logo">VRChat Home</a>
+        <div class="toggle" onclick="toggleMenu();"></div>
+        <ul class="navigation">
+            <li><a target="_self" href="VRChat1.html" style="--i:1;">Home</a></li>
+            <li><a target="_self" href="Staff.html" style="--i:2;">Staff</a></li>
+            <li><a target="_blank" href="#" style="--i:3;">About Us</a></li>
+            <li><a target="_blank" href="#" style="--i:4;">Contact Us</a></li>
+            <li><a target="_blank" href="https://vrchat.threadless.com/collections" style="--i:5;">More</a></li>
+        </ul>
+    </header>
+    <div class="container">
+        <div class="box">
+            <div class="imgBox">
+                <img src="Images/vrchatback.jpg">
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <ul class="sci">
+            <li><a href="https://store.steampowered.com/app/438100/VRChat/">Steam</a></li>
+            <li><a href="https://twitter.com/VRChat">Twitter</a></li>
+            <li><a href="https://www.instagram.com/vrchat/">Instagram</a></li>
+            <li><a href="https://www.oculus.com/experiences/rift/997678176960598/">Oculus</a></li>
+        </ul>
+        <p class="copyrightText">VRChat 2022</p>
+    </div>
+</section>
+<script>
+    let imgBox = document.querySelectorAll('.imgBox');
+    imgBox.forEach(popup => popup.addEventListener('click', () =>{
+        popup.classList.toggle('active');
+    }))
+
+    function toggleMenu(){
+        const menuToggle = document.querySelector('.toggle');
+        const navigation = document.querySelector('.navigation');
+        menuToggle.classList.toggle('active');
+        navigation.classList.toggle('active');
+    }
+</script>
+</body>
+</html>

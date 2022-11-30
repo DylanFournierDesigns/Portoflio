@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/Staff.css">
+    <title>Staff</title>
+</head>
+<body>
+<section>
+    <header>
+      <a href="#" class="logo">Meet The Team!</a>
+      <div class="toggle" onclick="toggleMenu();"></div>
+      <ul class="navigation">
+          <li><a target="_self" href="VRChat1.html" style="--i:1;">Home</a></li>
+          <li><a target="_self" href="Staff.html" style="--i:2;">Staff</a></li>
+          <li><a target="_blank" href="#" style="--i:3;">About Us</a></li>
+          <li><a target="_blank" href="#" style="--i:4;">Contact Us</a></li>
+          <li><a target="_blank" href="https://vrchat.threadless.com/collections" style="--i:5;">More</a></li>
+      </ul>
+    </header>
+    <div class="container">
+        <div class="box" style="--i:3;">
+            <div class="imgBox">
+                <a target="_self" href="Tupper.html">
+                    <img src="Images/tupper.png">
+                </a>
+            </div>
+        </div>
+        <div class="box" style="--i:4;">
+            <div class="imgBox">
+                <a target="_self" href="VRPill.html">
+                    <img src="Images/vrpill.jpg">
+                </a>
+            </div>
+        </div>
+        <div class="box" style="--i:5;">
+            <div class="imgBox">
+                <a target="_self" href="Ron.html">
+                    <img src="Images/ron.png">
+                </a>
+            </div>
+        </div>
+        <div class="box" style="--i:6;">
+            <div class="imgBox">
+                <a target="_self" href="MehStrongBadMeh.html">
+                    <img src="Images/mehstrongbadmeh.jpg">
+                </a>
+            </div>
+        </div>
+        <div class="box" style="--i:7;">
+            <div class="imgBox">
+                <a target="_self" href="Gunter.html">
+                    <img src="images/gunter.png">
+                </a>
+            </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+      <ul class="sci">
+          <li><a href="https://store.steampowered.com/app/438100/VRChat/">Steam</a></li>
+          <li><a href="https://twitter.com/VRChat">Twitter</a></li>
+          <li><a href="https://www.instagram.com/vrchat/">Instagram</a></li>
+          <li><a href="https://www.oculus.com/experiences/rift/997678176960598/">Oculus</a></li>
+      </ul>
+      <p class="copyrightText">VRChat 2022</p>
+    </div>
+</section>
+<script>
+    function toggleMenu(){
+        const menuToggle = document.querySelector('.toggle');
+        const navigation = document.querySelector('.navigation');
+        menuToggle.classList.toggle('active');
+        navigation.classList.toggle('active');
+    }
+</script>
+</body>
+</html>
