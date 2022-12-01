@@ -65,7 +65,7 @@ html
     position: absolute;
     top: 0;
     right: 0;
-    background-image: url('/VideoSite/Images/Dylan.png');
+    background-image: url('Images/Dylan.png');
     height: 900px;
     width: 100%;
     z-index: -1;
